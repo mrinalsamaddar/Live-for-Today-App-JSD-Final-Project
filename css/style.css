@@ -1,0 +1,88 @@
+
+body{
+    background-color: lightblue;
+    font-family: helvetica;
+}
+label{
+    padding: 10px 10px 10px 0;
+    display:inline-block;
+}
+
+input{
+    width: 135px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+button{
+    background-color:firebrick;
+    border:none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+select{
+    width: 150px;
+    padding:5px;
+    /* border: 1px solid #ccc; */
+    resize: vertical;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+
+
+#intro{
+    text-align:center;    
+}
+
+#weather{  
+       
+    width:auto;
+    height: 120px;
+    border: 2px solid blue;    
+}
+#news{
+    
+    width: auto;
+    height: 200px;
+    border: 2px solid blue;   
+    overflow: auto;
+    
+}
+#meals{
+    /*float: left;*/
+    position: relative;
+    width:50%;
+    height: 380px;
+    border: 1px solid blue; 
+    overflow: auto;   
+  
+}
+
+#trivia{
+    /*float: left;*/
+    position: absolute;
+    top: 440px;
+    right:8px;
+    width:49%;
+    height: 382px;
+    border: 1px solid blue; 
+    overflow: auto;
+   
+}
+
+#triviaForm label{
+    width: 200px;
+}
+
+#advise{
+    
+    float: left;
+    text-align:center;
+    width:100%;
+    height: 70px;
+    border: 2px solid blue;   
+}

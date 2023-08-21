@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="shortcut icon" href="#"><!-- no favicon error-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live for today - App</title>
+
+    <script src="js/axios.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="intro">
+    <h1 style="color:chocolate">Live for today !</h1>
+    <p><q>Today is the first day of the rest of your life</q> - Abbie Hoffman</p>
+    </div>
+    
+
+    <div id="weather">
+        <span style="color:chocolate"><b>Today's Weather</b></span>
+        
+        <p id="weatherPanel"></p>
+    </div>
+    <div id="news">
+        <span style="color:chocolate"><b>Todayy's News Headlines</b></span>
+    </div>
+    <div id="meals">
+        <div id="randomMeal"><span style="color:chocolate"><b>Todays Meal to cook</b></span></div>
+        <div style="top:5px">
+            <p>Search for a Recipe</p>
+            <input type="text" id="searchRecipeText" placeholder="recipe search">
+            <button id="searchRecipeButton">Search</button>
+        </div>
+        <div id="searchRecipeResults"></div>
+    </div>
+    <div id="trivia"><span style="color:chocolate"><b>Todays Trivia</b></span>
+    <form id="triviaForm">
+        <label for="triviaAmount">How many questions ?</label>
+        <input type="number" name="triviaAmount" id="triviaAmount" min="1" max="10" value="5" >
+        <br>
+        <label for="triviaCategory">Select a Category:</label>
+        <select name="triviaCategory" id="triviaCategory">
+            <option value="9">General Knowledge</option>
+            <option value="11">Movies</option>
+            <option value="12">Music</option>
+            <option value="17">Science and Nature</option>
+            <option value="18">Computers</option>
+            <option value="19">Mathmatics</option>
+            <option value="21">Sports</option>
+            <option value="26">Celebrities</option>
+        </select>
+        <br>
+        <label for="triviaDifficulty">Select Difficulty level:</label>
+        <select name="triviaDifficulty" id="triviaDifficulty"> 
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <br>
+        <label for="triviaType">Type of Questions:</label>
+        <select name="triviaType" id="triviaType">
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True/False</option>
+        </select>
+        <br>
+        <button>Get trivia</button>        
+    </form>
+    <div id="triviaSearchResults"></div>
+    </div>
+
+    <div id="advise"><span style="color:chocolate"><b>Today's Advise</b></span></div>
+
+    <div id="searchResults"></div>
+    
+    
+</body>
+</html>
